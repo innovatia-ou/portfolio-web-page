@@ -1,18 +1,19 @@
 #about {
-    width: 100%;
-    
-    .title-container {
-        display: flex;
-        align-items: center;
-        width: 15%;
+  width: 100%;
+  flex-direction: row;
 
-        padding: 0px 20px;
-    }
+  .title-container {
+    display: flex;
+    align-items: center;
+    width: 15%;
 
-    .about-us-content {
-        display: flex;
-        flex-direction: column;
-        width: 85%;
-        padding: 10px 10px 10px 20px;
-    }
+    padding: 0px 20px;
+  }
+
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10px 10px 10px 20px;
+  }
 }
