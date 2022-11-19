@@ -1,17 +1,27 @@
+@use "../../styles/colors" as *;
+
 .hire-us {
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 70px;
-  background: #e153e3;
-  color: #fff;
-  font-size: 25px;
-  padding: 12px 36px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid #e153e3;
+  width: 45%;
+  height: 47px;
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Rajdhani", sans-serif;
   letter-spacing: 2px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  color: $greyscale-200;
+  background: $primary-color;
+  border-radius: 6px;
+  border: none;
+  background-image: $gradiente;
+
+  &:hover {
+    background-image: linear-gradient(
+      darken($color: $primary-color, $amount: 20),
+      darken($color: $secondary-color, $amount: 20)
+    );
+  }
 }

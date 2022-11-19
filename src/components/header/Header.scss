@@ -1,44 +1,73 @@
+@use "../../styles/styles" as *;
 .page-header {
   display: flex;
   height: 8.5%;
   width: 100%;
   background-color: #121214;
+  box-shadow: 1px 12px 22px -13px $primary-color;
+}
 
-  .brand-container {
-    display: flex;
-    width: 20%;
-    height: 100%;
+.brand-container {
+  display: flex;
+  width: 30%;
+  height: 100%;
+
+  img {
+    margin: 0.4rem;
   }
-  .navbar {
+  p {
     display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  height: 100%;
+  padding-right: 5rem;
+  ul {
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
-    width: 80%;
+    width: 70%;
     height: 100%;
-    padding-right: 10px;
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      width: 70%;
-      height: 100%;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      gap: 80px;
-    }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    gap: 25px;
+  }
 
-    li {
-      padding: 0.6rem;
-      float: right;
-    }
+  li {
+    float: right;
+  }
 
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  li a::after {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    display: block;
+    height: 3px;
+    background-color: $primary-color;
+    transition: 0.5s cubic-bezier(0.5, -0.55, 0.265, 2.03);
+    visibility: hidden;
+  }
+
+  li a:hover::after {
+    width: 76%;
+
+    visibility: visible;
   }
 }

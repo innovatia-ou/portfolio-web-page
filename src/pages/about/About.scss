@@ -17,25 +17,21 @@
     width: 85%;
     padding: 10px 10px 10px 20px;
     overflow-y: scroll;
-
   }
 
   .purpose {
     display: flex;
     flex-direction: column;
-    
+
     .introduction {
-        padding-bottom: 5px;
+      padding-bottom: 5px;
     }
 
-    .purpose-content {
-        display: flex;
-        padding: 10px 0 10px 0;
-        align-items: center;
-        
-        img {
-            width: 20%;
-        }
+    .about-us-content {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      padding: 10px 10px 10px 20px;
     }
-}
+  }
 }

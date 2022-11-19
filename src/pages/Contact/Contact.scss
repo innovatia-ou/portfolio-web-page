@@ -1,0 +1,37 @@
+#contact {
+  display: flex;
+
+  .vertical-container {
+    display: flex;
+    height: 100%;
+    padding-top: 3rem;
+    width: 10%;
+  }
+
+  .container-icons-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    padding: 2.5rem;
+    width: 90%;
+  }
+
+  .icons {
+    width: 90%;
+    display: flex;
+    gap: 4rem;
+    padding: 0 20px 0 20px;
+    height: 50%;
+    flex-wrap: wrap;
+  }
+  .bg-woman {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+
+    img {
+      height: 80%;
+    }
+  }
+}
