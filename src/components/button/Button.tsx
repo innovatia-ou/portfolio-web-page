@@ -1,3 +1,9 @@
+import "./Button.scss";
+
 export const Button = () => {
-  return <button>Hire us</button>;
+  return (
+    <a href="" className="hire-us">
+      Hire us
+    </a>
+  );
 };
