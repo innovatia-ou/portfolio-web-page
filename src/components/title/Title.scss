@@ -1,0 +1,17 @@
+@use '../../styles/styles' as *;
+
+.title-component {
+    box-sizing: border-box;
+    color: $greyscale-200;
+    border-bottom: 3px solid;
+    margin: 0.125rem 0 0.125rem 0;
+    box-sizing: border-box;
+    width: fit-content;
+
+}
+.primary {
+    border-bottom-color: $primary-color;
+}
+.secondary {
+    border-bottom-color: $secondary-color;
+}   
