@@ -1,0 +1,18 @@
+@use '../../styles/styles' as *;
+
+#vertical-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.vertical-title-name {
+    writing-mode: vertical-lr;
+    margin:0;
+    transform: rotate(180deg);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 10px solid $primary-color;
+}
