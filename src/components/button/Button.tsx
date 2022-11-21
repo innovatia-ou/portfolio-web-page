@@ -1,9 +1,13 @@
 import "./Button.scss";
+interface ButtonProps {
+  children:string;
+  onClick: () => void; 
+}
 
-export const Button = () => {
+export const Button = ({children, onClick, ...props}:ButtonProps) => {
   return (
-    <a href="" className="hire-us">
-      Hire us
-    </a>
+    <button onClick={onClick} {...props} className="hire-us">
+      {children}
+    </button>
   );
 };
