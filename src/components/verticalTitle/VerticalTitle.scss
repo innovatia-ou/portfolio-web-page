@@ -11,9 +11,11 @@
 }
 .vertical-title-name {
     writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0;
+    box-sizing: content-box;
     transform: rotate(180deg);
-    padding-left: 2rem;
-    padding-right: 2rem;
     border-left: 10px solid $primary-color;
 }
