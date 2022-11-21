@@ -1,12 +1,13 @@
 #about {
   width: 100%;
   flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
 
   .title-container {
     display: flex;
     align-items: center;
     width: 15%;
-
     padding: 0px 20px;
   }
 
@@ -15,5 +16,26 @@
     flex-direction: column;
     width: 85%;
     padding: 10px 10px 10px 20px;
+    overflow-y: scroll;
+
   }
+
+  .purpose {
+    display: flex;
+    flex-direction: column;
+    
+    .introduction {
+        padding-bottom: 5px;
+    }
+
+    .purpose-content {
+        display: flex;
+        padding: 10px 0 10px 0;
+        align-items: center;
+        
+        img {
+            width: 20%;
+        }
+    }
+}
 }
