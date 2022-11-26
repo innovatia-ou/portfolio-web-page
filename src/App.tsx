@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 import { About } from "./pages/About/About";
 import { Home } from "./pages/Home/Home";
 import { Technologies } from "./pages/Technologies/Technologies";
+import { Projects } from "./pages/Projects/Projects";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Header />
       {/* <Home /> */}
       {/* <About /> */}
-      <Technologies />
+      {/* <Technologies /> */}
+      <Projects />
       <Footer />
     </div>
   );
