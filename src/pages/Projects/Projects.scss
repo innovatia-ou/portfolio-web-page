@@ -1,0 +1,37 @@
+@use '../../styles/styles' as *;
+
+#projects {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+
+    .projects-right-side {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        height: 100%;
+        width: 90%;
+        padding: 1.5rem;
+
+        .empty-message-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 100%;
+            width: 100%;
+            top: 20%;
+            justify-content: center;
+
+            .empty-message {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            
+            iframe {
+                width: 800px;
+                height: 600px;
+            }
+        }
+    }
+}
+
